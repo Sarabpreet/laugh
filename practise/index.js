@@ -1,10 +1,10 @@
-/*
+/* 				Practising Basic JavaScript (Syntax's and Concepts)
 
 //types 
 
 
 *Primitive type: 
-
+-> Which includes number boolean, string, null and undefined.
 var  a=10;
 var  b=a;
 var  b=20;
@@ -26,7 +26,7 @@ console.log("b is "+b+" & a is "+a);
 
 //-------------------------------------------------
 //*Complex type
-
+-> which includes Array, Function, Object
 
 
 
@@ -43,9 +43,24 @@ console.log(a);
 
 */
 
-
 var a="woot";
 var b= new String("woota");
-b=a;
-console.log(a+b);
+
+console.log(typeof a); //String
+console.log(typeof b); //Object
+
+var j= a instanceof String;
+var k= b instanceof String;
+
+//a.substr == b.substr  is true.
+
+if(a.substr == b.substr) {
+
+var l=true;
+	console.log("yes");
+}
+
+
+console.log(j); //False
+console.log(k);  //True
 
