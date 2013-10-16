@@ -41,7 +41,7 @@ console.log(a);
 // this does'nt happens in primitive type. (it copies the value.)
 
 
-*/
+
 
 var a="woot";
 var b= new String("woota");
@@ -64,3 +64,32 @@ var l=true;
 console.log(j); //False
 console.log(k);  //True
 
+
+var type=typeof null; // and this is an object
+console.log(type);
+
+var typearray=typeof []; // this is an object too!
+console.log(typearray); 
+
+
+//v8 provides a way of identify array though. 
+
+function something() {
+
+var typefunc = typeof something;
+console.log("this is "+typefunc);
+
+}
+
+something(); //now this will say its a function.
+*/
+
+//////call and appy in functions///// 
+
+function a(){
+
+	60==this;
+	console.log(this);
+}
+
+a();
