@@ -82,14 +82,72 @@ console.log("this is "+typefunc);
 }
 
 something(); //now this will say its a function.
-*/
+
 
 //////call and appy in functions///// 
 
+
+//The value of this is the global oject
 function a(){
 
-	60==this;
-	console.log(this);
+ if(window==this) {
+
+ 	console.log("yes");  //it says yes, that means window==this is true!
+ };
 }
 
 a();
+
+function a() {
+
+if(	this.a=='b') {  //which is true as well !! 
+
+	console.log("yes this is true"); 
+}
+}
+
+a.call({a:'b'});
+
+// please note the diffrence between call and apply : 
+
+//call : takes a list of parameter 
+//apply: takes an array
+
+
+
+//closures 
+
+//everytime a function is called a new scope is defined 
+
+
+var a=5;
+
+function woot() {
+	if(a==5){
+	console.log("true hai");
+	}
+	//true
+
+var a=6;
+
+function test() {
+if(a==6){
+	console.log("true hai second wala");
+	}
+
+
+}
+test();
+};
+
+woot();
+
+*/
+
+
+//Classes  (there is no class keyword in javascript its defined like function instead)
+
+
+//function someClass() {} 
+
+
