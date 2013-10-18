@@ -148,6 +148,31 @@ woot();
 //Classes  (there is no class keyword in javascript its defined like function instead)
 
 
-//function someClass() {} 
+/*example:  function someClass() {} 
 
+
+
+//------------------------------------------try-catch block
+
+
+function abc(){
+
+	var a=5;
+	try{
+
+		a();
+	} 
+	catch(e) {
+
+		e instanceof Error;   //which is true.
+	}
+	console.log("you got an error"); //this will be shown.
+}
+
+abc();
+
+*/ 
+
+
+//v8 JavaScript
 
