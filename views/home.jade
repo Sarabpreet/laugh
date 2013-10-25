@@ -1,0 +1,16 @@
+style  
+ .abc {color:blue} 
+
+h1.abc hello & #{title}
+
+p #{para}
+
+-var users = [{name:'joe', email:"someone@someone.com"},{name:'joed',email:"someone@someone.com"},{name:'joey',email:"someone@someone.com"}];
+ 
+mixin userLi(user) 
+  li #{user.name} &lt; #{user.email}
+
+
+ul 
+   each user, in users
+     mixin userLi(user)
